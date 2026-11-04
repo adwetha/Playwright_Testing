@@ -1,4 +1,4 @@
-Explicit wait using locator.wait_for()
+#Explicit wait using locator.wait_for()
 from playwright.sync_api import expect
 def test_dynamic_loading(page):
     page.goto("https://the-internet.herokuapp.com/dynamic_loading/1")
@@ -10,7 +10,7 @@ def test_dynamic_loading(page):
     )
     expect(heading).to_have_text("Hello World!")
  
-waiting for navigation
+#waiting for navigation
 from playwright.sync_api import expect
  
 def test_wait_for_url(page):
